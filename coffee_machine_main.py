@@ -35,6 +35,7 @@ def calculate_coin(cost):
 
 def transaction_successful(cost, coins_given, required_resources):
     if coins_given < cost:
+        print("Not enough money.Money refunded.")
         return False
     elif coins_given >= cost:
         if coins_given > cost:
